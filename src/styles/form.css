@@ -1,0 +1,74 @@
+form {
+  margin-top: 17rem;
+}
+
+form input[name="city"],
+form input[name="country"] {
+  position: relative;
+  top: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  box-shadow: none !important;
+  z-index: 1;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 0;
+  outline: none;
+}
+
+form input:focus {
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+form input::placeholder {
+  position: relative;
+  color: #ffffff;
+}
+
+form input:focus::placeholder {
+  color: transparent;
+}
+
+form input:focus + .form-span {
+  transform: translateY(-30px);
+  transition: 0.2s ease-in-out;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.form-span {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: transparent;
+}
+
+.btn-outline-white,
+.btn-outline-white:hover,
+.btn-outline-white:active {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+@media (max-width: 1000px) {
+  form {
+    margin-top: 20rem;
+  }
+  form input[name="city"] {
+    position: relative;
+    top: -20px;
+    margin-bottom: 10px;
+    left: 0;
+  }
+
+  form input[name="city"]:focus + .form-span {
+    transform: translateY(-60px);
+  }
+
+  .btn-outline-white {
+    position: relative;
+    top: 50px;
+  }
+}

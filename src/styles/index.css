@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../assets/dark.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-size: auto;
+  }
+}

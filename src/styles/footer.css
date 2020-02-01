@@ -1,0 +1,21 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 43%;
+}
+
+.footer span {
+  margin-right: 10px;
+}
+
+.footer a {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    left: 25%;
+  }
+}
